@@ -3,29 +3,109 @@ body {
     background-color: #f4eced;
 }
 
+.my-name {
+  color: #ea6a91;
+  font-size: larger;
+  float: left;
+  font-size: 35px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 1%;
+}
+
+.navbar {
+  font-size: larger;
+}
+
 
 .home-pic img{
     max-width: 100%;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-right: auto;
+    margin: auto;
 }
 
+.p-home {
+  text-align: center;
+  color: maroon;
+  font-weight: bolder;
+  font-size: 25px;
+}
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: pink;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1 {
+  font-size: 30px;
+  background-color: white;
+  color:blue;
+  text-align: center;
+}
+  
 h2 {
-    background-color: white;
-    color:blue;
+  margin-left: 7%;
+}
+
+.Capaciti {
+  color: black;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 25px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+
+.arrow {
+  margin-left: 47%;
+  font-size: 30px;
+}
+
+.arrow:hover {
+background-color: pink;
+
 }
 
 ul {
@@ -35,24 +115,20 @@ ul {
     overflow: hidden;
   }
   
-  li {
-    float: right;
-  }
-  
 li a {
     display: block;
     padding: 20px;
     margin: 5px;
-    color: maroon;
+    color: blue;
     font-size: larger;
     font-weight: bold;
-    text-align: center;
     text-decoration: none;
+    float: right;
   }
   
     
-li a :hover {
-    background-color: lightblue;
+a:hover {
+    background-color:pink;
   }
 
 aside {
@@ -73,14 +149,22 @@ aside {
   font-family: Comic sans MS;
 }
 
+.touch {
+  color: blue;
+}
+
+.content-form {
+  font-family: Comic sans MS;
+  font-size: 21px;
+}
+
 footer{
   text-align: center;
   margin: 60px 0;
 }
 
+
 .footer-links {
-  display: flex;
-  text-align: center;
-  margin-right: auto;
+  display: inline-flex;
 }
 
