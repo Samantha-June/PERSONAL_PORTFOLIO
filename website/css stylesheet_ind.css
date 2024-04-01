@@ -4,6 +4,110 @@ body {
   background-color: #f4eced;
 }
 
+
+/*NAVIGATION*/
+
+/* Responsive navigation */
+@media screen and (max-width: 768px) {
+  .navbar {
+    overflow: visible;
+  }
+  
+  .navbar ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Background color for mobile nav */
+    width: 100%;
+    top: 56px; /* Adjust based on your navbar height */
+    left: 0;
+  }
+  
+  .navbar ul li {
+    float: none;
+  }
+  
+  .navbar ul li a {
+    padding: 15px 16px;
+    border-bottom: 1px solid #dddddd; /* Separator line */
+  }
+  
+  .navbar ul li:last-child a {
+    border-bottom: none; /* Remove separator line for last item */
+  }
+  
+  .navbar .dropdown-content {
+    position: static;
+    display: none;
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+/*End of media */
+
+.navbar {
+  background-color: #ffffff; /* Background color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive;
+  overflow: hidden;
+}
+
+.dropdown {
+  position: static;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff; /* Dropdown background color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333333; /* Dropdown text color */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  padding: 20px 16px;
+  color: #333333; /* Text color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar li a:hover {
+  color: #ea6a91; /* Hover text color */
+}
+
+/*MY NAME*/
+
 .my-name {
 color: #ea6a91;
 font-size: larger;
@@ -14,17 +118,6 @@ margin-left: 1%;
 text-align: center;
 }
 
-.ojuju-my-name {
-font-family: "Ojuju", sans-serif;
-font-optical-sizing: auto;
-font-weight: 100;
-font-style: normal;
-}
-
-.navbar {
-font-size: larger;
-}
-
 
 .home-pic img{
   max-width: 100%;
@@ -32,6 +125,12 @@ font-size: larger;
   display: block;
   margin: auto;
   border-radius: 0%;
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+/* Apply hover effect */
+.home-pic img:hover {
+  transform: scale(1.1); /* Increase the size of the image on hover */
 }
 
 .p-home {
@@ -41,59 +140,6 @@ font-weight: bolder;
 font-size: 28px;
 }
 
-.dropdown {
-float: right;
-overflow: hidden;
-position: relative;
-display: inline-block;
-}
-
-/*.dropdown{
-font-size: 16px;  
-border: none;
-outline: none;
-color: white;
-padding: 14px 16px;
-background-color: inherit;
-font-family: inherit;
-margin: 0;
-}*/
-
-.dropdown-content {
-display: none;
-background-color: white;
-position: absolute;
-float: right;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
-}
-
-.navbar ul li:hover .dropdown-content {
-position: absolute;
-background-color: white;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-display: inline-block;
-} 
-
-
-.dropdown-content a {
-float: none;
-color: blue;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-text-align: left;
-background-color: white;
-}
-
-
-.dropdown:hover .dropdown-content {
-display: block;
-}
 
 h1 {
 font-size: 30px;
@@ -106,6 +152,52 @@ h2 {
 margin-left: 7%;
 }
 
+/* ABOUT*/
+
+#about {
+  padding: 50px 0; /* Add padding for better spacing */
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-container h2 {
+  font-size: 32px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+#additional-info {
+  display: none; /* Hide additional info by default */
+}
+
+#additional-info.active {
+  display: block; /* Show additional info when active */
+}
+
+#toggle-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#toggle-button:hover {
+  background-color: #0056b3;
+}
 .Capaciti {
 color: black;
 font-weight: bold;
@@ -131,42 +223,116 @@ background-color: pink;
 
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+
+/*ASIDE BOX*/
+/* Style the paragraph */
+.par {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-li a {
-  display: block;
-  padding: 20px;
-  margin: 5px;
-  color: blue;
-  font-size: larger;
-  font-weight: bold;
-  text-decoration: none;
-  float: right;
+/* Style the container for tables */
+.table-container {
+  width: 45%; /* Adjust the width of the table container */
 }
 
-  
-a:hover {
-  background-color:pink;
+/* Style the container for tables and aside */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.container p {
+  font-size: 16px;
+  color: #333;
 }
 
 aside {
-  width: 30%;
-  padding-left: 5px 5px;
-  float: right;
-  margin-left: 10px; 
+  width: 30%; /* Adjust width to fit your content */
+  padding: 20px; /* Adjust padding as needed */
   font-style: italic;
   background-color: lightgray;
-  border-radius: 500%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  border-radius: 5px;
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    }
+  margin: 0 auto; /* Center the aside box horizontally */
+}
+
+
+
+
+/*SKILLS*/
+  /* Center the Skills section */
+#skill {
+  text-align: center;
+}
+
+
+/* Style the tables */
+.table {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+/* Style table headers */
+#tech-stack-table th,
+#additional-skills-table th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style table cells */
+#tech-stack-table td,
+#additional-skills-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect on table headers */
+#tech-stack-table th:hover,
+#additional-skills-table th:hover {
+  background-color: black !important; /* Add !important to override any other conflicting styles */
+}
+
+/* Equal width for table columns */
+#tech-stack-table th,
+#tech-stack-table td {
+  width: calc(100% / 3); /* Equal width for each column */
+}
+
+#additional-skills-table th,
+#additional-skills-table td {
+  width: calc(32%); /* Equal width for each column */
+}
+
+/* Specific styles for each column heading */
+#tech-stack-table th:nth-child(1),
+#additional-skills-table th:nth-child(1) {
+  background-color: blue;
+  color: white;
+}
+
+#tech-stack-table th:nth-child(2),
+#additional-skills-table th:nth-child(2) {
+  background-color: green;
+  color: white;
+}
+
+#tech-stack-table th:nth-child(3),
+#additional-skills-table th:nth-child(3) {
+  background-color: orange;
+  color: white;
+}
+
+
+
+
+/*CONTACT*/
 
 .contact {
 font-family: Comic sans MS;
@@ -230,5 +396,5 @@ font-weight: bolder;
 font-size: 28px;
 }
 
-
+}
 
