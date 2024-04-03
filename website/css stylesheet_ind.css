@@ -1,73 +1,36 @@
 
+/* Responsive navigation */
+
+  
+  
+/*End of media */
+
 
 body {
-  background-color: #f4eced;
+  background-color: white;
+  font-family: Poppins; san-serif;
 }
 
 
 /*NAVIGATION*/
-
-/* Responsive navigation */
-@media screen and (max-width: 768px) {
-  .navbar {
-    overflow: visible;
-  }
-  
-  .navbar ul {
-    display: none;
-    position: absolute;
-    background-color: #ffffff; /* Background color for mobile nav */
-    width: 100%;
-    top: 56px; /* Adjust based on your navbar height */
-    left: 0;
-  }
-  
-  .navbar ul li {
-    float: none;
-  }
-  
-  .navbar ul li a {
-    padding: 15px 16px;
-    border-bottom: 1px solid #dddddd; /* Separator line */
-  }
-  
-  .navbar ul li:last-child a {
-    border-bottom: none; /* Remove separator line for last item */
-  }
-  
-  .navbar .dropdown-content {
-    position: static;
-    display: none;
-    width: auto;
-    padding: 0;
-    box-shadow: none;
-    border: none;
-  }
-  
-  .navbar .dropdown:hover .dropdown-content {
-    display: block;
-  }
-}
-/*End of media */
-
 .navbar {
-  background-color: #ffffff; /* Background color */
+  background-color: #1e4620; /* Green background for navigation */
+  color: #ffffff; /* White text color */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
   font-size: 22px;
   font-weight: bold;
-  font-family: 'Comic Sans MS', cursive;
+  font-family:Arial, Helvetica, sans-serif;
   overflow: hidden;
 }
 
 .dropdown {
   position: static;
- 
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffffff; /* Dropdown background color */
+  background-color: #1e4620; /* Green background for dropdown */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
   z-index: 1;
 }
@@ -77,7 +40,7 @@ body {
 }
 
 .dropdown-content a {
-  color: #333333; /* Dropdown text color */
+  color: white; /* Dropdown text color */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -95,21 +58,38 @@ body {
 }
 
 .navbar li a {
+  color: #ffffff; /* White text color for navigation links */
   display: block;
   padding: 20px 16px;
-  color: #333333; /* Text color */
   text-decoration: none;
-  transition: color 0.3s ease; /* Smooth color transition */
+  transition: color 0.1s ease; /* Smooth color transition */
 }
 
-.navbar li a:hover {
-  color: #ea6a91; /* Hover text color */
-}
+h1 {
+  font-size: 30px;
+    background-color: #ffffff; /* White background */
+    color: #1e4620; /* Green text color */
+    text-align: center;
+  }
+  
+  h2 {
+  margin-left: 7%;
+  }
+  
+  h3 {
+    font-size: 25px;
+    }
+    
+    h4 {
+    font-size: 26px;
+    text-align: center;
+    }
 
+
+/*HOME*/
 /*MY NAME*/
-
 .my-name {
-color: #ea6a91;
+color: black;
 font-size: larger;
 font-weight: bolder;
 font-size: 35px;
@@ -118,14 +98,13 @@ margin-left: 1%;
 text-align: center;
 }
 
-
 .home-pic img{
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-  border-radius: 0%;
-  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+max-width: 100%;
+height: auto;
+display: block;
+margin: auto;
+border-radius: 0%;
+transition: transform 0.3s ease; /* Smooth transition for the hover effect */
 }
 
 /* Apply hover effect */
@@ -140,17 +119,6 @@ font-weight: bolder;
 font-size: 28px;
 }
 
-
-h1 {
-font-size: 30px;
-background-color: white;
-color:blue;
-text-align: center;
-}
-
-h2 {
-margin-left: 7%;
-}
 
 /* ABOUT*/
 
@@ -198,69 +166,44 @@ margin-left: 7%;
 #toggle-button:hover {
   background-color: #0056b3;
 }
-.Capaciti {
-color: black;
-font-weight: bold;
-}
 
-h3 {
-font-size: 25px;
-}
-
-h4 {
-font-size: 26px;
-text-align: center;
-}
-
-
-.arrow {
-margin-left: 47%;
-font-size: 30px;
-}
-
-.arrow:hover {
-background-color: pink;
-
-}
-
-
-/*ASIDE BOX*/
-/* Style the paragraph */
-.par {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-/* Style the container for tables */
-.table-container {
-  width: 45%; /* Adjust the width of the table container */
-}
-
-/* Style the container for tables and aside */
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-
-.container p {
-  font-size: 16px;
-  color: #333;
-}
-
+/*ASIDE*/
+/* Style the container for aside */
 aside {
+  background-color: #ffffff; /* White background for aside */
+  color: #1e4620; /* Green text color for aside */
   width: 30%; /* Adjust width to fit your content */
   padding: 20px; /* Adjust padding as needed */
   font-style: italic;
-  background-color: lightgray;
   border-radius: 5px;
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   margin: 0 auto; /* Center the aside box horizontally */
 }
 
+.Capaciti {
+  color: black;
+  font-weight: bold;
+  }
 
+
+/*WORK EXPERIENCE*/
+/* Style the paragraph */
+p {
+  text-align: center;
+  font-size: 25px;
+  }
+  
+  .work {
+  text-align: left;
+  font-size: 20px;
+  }
+
+  .peruse {
+  text-align: left;
+  color: maroon;
+  font-weight: bolder;
+  font-size: 28px;
+  }
 
 
 /*SKILLS*/
@@ -269,23 +212,14 @@ aside {
   text-align: center;
 }
 
-
-/* Style the tables */
-.table {
-  margin-bottom: 30px;
-  width: 100%;
+/* Style the container for tables */
+.table-container {
+  width: 45%; /* Adjust the width of the table container */
 }
-
 
 /* Style table headers */
 #tech-stack-table th,
-#additional-skills-table th {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-/* Style table cells */
+#additional-skills-table th,
 #tech-stack-table td,
 #additional-skills-table td {
   padding: 8px;
@@ -330,10 +264,7 @@ aside {
 }
 
 
-
-
 /*CONTACT*/
-
 .contact {
 font-family: Comic sans MS;
 }
@@ -362,39 +293,32 @@ margin: 60px 0;
 display: inline-flex;
 }
 
-/* Aside-Table*/
-.container {
-display: flex;
-flex-direction: row;
-flex-wrap:wrap ;
-padding: 10px;
-margin: 1px;
-gap: 50px;
+/* Scroll to top button */
+#scrollToTopBtn,
+  #scrollToBottomBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-
+#scrollToTopBtn:hover, #scrollToBottomBtn:hover {
+  background-color: #555; /* Add a darker background on hover */
 }
 
-p {
-text-align: center;
-font-size: 25px;
-}
 
-.par  {
-text-align: center;
-font-size: 20px;
-}
 
-.work {
-text-align: left;
-font-size: 20px;
-}
 
-.peruse {
-text-align: left;
-color: maroon;
-font-weight: bolder;
-font-size: 28px;
-}
 
-}
+
+
+
+
+
 

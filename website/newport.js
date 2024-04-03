@@ -49,5 +49,38 @@
 
   //SKILLS
 
+//Scroll to Top/Bottom
+// Get the buttons
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+var scrollToBottomBtn = document.getElementById("scrollToBottomBtn");
 
+// Initially hide the buttons
+scrollToTopBtn.style.display = "none";
+scrollToBottomBtn.style.display = "none";
+
+// When the user scrolls
+window.onscroll = function() {
+  // Show or hide the scroll-to-top button based on the scroll position
+  if (window.scrollY > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
   
+  // Show or hide the scroll-to-bottom button based on the scroll position
+  if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 20) {
+    scrollToBottomBtn.style.display = "none";
+  } else {
+    scrollToBottomBtn.style.display = "block";
+  }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// When the user clicks on the button, scroll to the bottom of the document
+function scrollToBottom() {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
