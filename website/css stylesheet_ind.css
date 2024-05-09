@@ -246,11 +246,31 @@ p {
   }
 
   .peruse {
-  text-align: left;
+  text-align: center;
   color: maroon;
   font-weight: bolder;
-  font-size: 28px;
+  font-size: 24px;
   }
+
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75%;
+    margin-left: 10% ;
+    font-size: 20px;
+}
+.column {
+    flex-basis: 45%;
+}
+.column h2 {
+    text-align: center;
+}
+.project {
+    margin-bottom: 20px;
+}
+.project p {
+    margin: 5px 0;
+}
 
 
 /*SKILLS*/
