@@ -84,3 +84,14 @@ function scrollToTop() {
 function scrollToBottom() {
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 }
+
+// Download CV 
+function downloadCV() {
+  // Adjust the file path based on its location
+  const cvPath = 'https://capeitinitiative-my.sharepoint.com/:b:/g/personal/samantha_calvert_capaciti_org_za/EczUzpF3Z8lMpzw5NVKYNyoB22iq0lqWV7e27X0ep4NYsg?e=nTWvyj';
+  const anchor = document.createElement('a');
+  anchor.href = cvPath;
+  anchor.download = 'Samantha Calvert_Curriculum Vitae (2).pdf';
+  anchor.target = '_blank'; // Open in a new tab
+  anchor.click();
+}

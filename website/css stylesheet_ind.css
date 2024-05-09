@@ -8,19 +8,22 @@
 
 body {
   background-color: white;
-  font-family: Poppins; san-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /*NAVIGATION*/
 .navbar {
-  background-color: #1e4620; /* Green background for navigation */
+  background-color: black; /* Green background for navigation */
   color: #ffffff; /* White text color */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
   font-size: 22px;
   font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center the navbar items horizontally */
+  align-items: center; /* Center the navbar items vertically */
 }
 
 .dropdown {
@@ -30,7 +33,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1e4620; /* Green background for dropdown */
+  background-color: black; /* Green background for dropdown */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
   z-index: 1;
 }
@@ -66,14 +69,16 @@ body {
 }
 
 h1 {
-  font-size: 30px;
-    background-color: #ffffff; /* White background */
-    color: #1e4620; /* Green text color */
-    text-align: center;
+  font-size: 26px;
+  color: black;
+  text-align: center;
+  margin-left: 43%;
+  max-width: 90%;
   }
   
   h2 {
-  margin-left: 7%;
+  text-align: center;
+  font-size: 22px;
   }
   
   h3 {
@@ -89,59 +94,89 @@ h1 {
 /*HOME*/
 /*MY NAME*/
 .my-name {
-color: black;
-font-size: larger;
-font-weight: bolder;
-font-size: 35px;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-margin-left: 1%;
-text-align: center;
+ 
+    color: white;
+    font-size: 33px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: auto; /* Move the name to the left by pushing it to the right */
+  }
+
+
+
+.home-pic {
+  max-width: 40%; /* Adjust the width of the image container */
+  float: left; /* Float the image container to the left */
+  margin-right: 4%; /* Add margin between image container and paragraphs */
+  margin-top: 25px;
 }
 
-.home-pic img{
-max-width: 100%;
-height: auto;
-display: block;
-margin: auto;
-border-radius: 0%;
-transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+.home-pic img {
+  max-width: 100%;
+  height: 350px;
+  display: block;
+  margin: auto;
+  border-radius: 0%;
 }
 
-/* Apply hover effect */
-.home-pic img:hover {
-  transform: scale(1.1); /* Increase the size of the image on hover */
-}
 
 .p-home {
-text-align: center;
-color: maroon;
-font-weight: bolder;
-font-size: 28px;
+  text-align: center;
+  color: maroon;
+  font-weight: bolder;
+  font-size: 28px;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.paragraphs {
+  width: 50%; /* Adjust the width of the paragraphs container */
+  float: left; /* Float the paragraphs container to the left */
+  padding-top: 70px;
+}
+
+.cv {
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.cv-button {
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1px;
+}
+
+.cv-button:hover {
+  background-color: #0056b3;
 }
 
 
 /* ABOUT*/
 
-#about {
-  padding: 50px 0; /* Add padding for better spacing */
-}
-
 .about-container {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 85%;
   text-align: center;
+  padding-top: 30%;
 }
 
 .about-container p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
+  margin-left: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .about-container h2 {
   font-size: 32px;
-  color: #333333;
-  margin-bottom: 20px;
+  color: black;
+text-align: center;
+margin-right: 30%;
 }
 
 #additional-info {
@@ -153,14 +188,15 @@ font-size: 28px;
 }
 
 #toggle-button {
-  background-color: #007bff;
+  background-color: black;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 13px;
   cursor: pointer;
   border-radius: 5px;
   margin-top: 20px;
+  margin-left: 43%;
 }
 
 #toggle-button:hover {
@@ -169,33 +205,44 @@ font-size: 28px;
 
 /*ASIDE*/
 /* Style the container for aside */
-aside {
-  background-color: #ffffff; /* White background for aside */
-  color: #1e4620; /* Green text color for aside */
-  width: 30%; /* Adjust width to fit your content */
-  padding: 20px; /* Adjust padding as needed */
-  font-style: italic;
-  border-radius: 5px;
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  margin: 0 auto; /* Center the aside box horizontally */
+
+
+.container {
+  max-width: 500%;
+  margin-top: 1px;
+  max-width: 90%;
+  margin-left: 13%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
 }
 
 .Capaciti {
-  color: black;
+  color: maroon;
   font-weight: bold;
+  font-style: italic;
   }
 
+  .skill {
+    font-size: 26px;
+    color: black;
+    margin-left: -38%;
+    padding-top: 5px;
+  }
 
 /*WORK EXPERIENCE*/
 /* Style the paragraph */
 p {
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
+  padding-top: 20px;
   }
   
   .work {
-  text-align: left;
-  font-size: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
   }
 
   .peruse {
@@ -208,8 +255,15 @@ p {
 
 /*SKILLS*/
   /* Center the Skills section */
-#skill {
+
+
+.par {
+  font-size: 20px;
+  line-height: 1.6;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 75%;
+  margin-left: 20%;
 }
 
 /* Style the container for tables */
@@ -217,13 +271,22 @@ p {
   width: 45%; /* Adjust the width of the table container */
 }
 
+.table {
+  text-align: center;
+  margin-left: 20%;
+}
+
+
+
 /* Style table headers */
+
+
 #tech-stack-table th,
 #additional-skills-table th,
 #tech-stack-table td,
 #additional-skills-table td {
   padding: 8px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
@@ -249,6 +312,7 @@ p {
 #additional-skills-table th:nth-child(1) {
   background-color: blue;
   color: white;
+
 }
 
 #tech-stack-table th:nth-child(2),
@@ -262,6 +326,7 @@ p {
   background-color: orange;
   color: white;
 }
+
 
 
 /*CONTACT*/
