@@ -41,6 +41,12 @@
   position: relative;
 }
 
+.btn-text {
+  margin-right: 10px;
+  font-weight: bold;
+  color: grey;
+  font-size: 15px;
+}
 
 
 * {
